@@ -35,7 +35,7 @@ const Input = ({
                 <div className="relative">
                     <input
                         type={visible}
-                        className={`input rounded-[14px] pl-[18px] pr-0 py-[11px] border border-[#D8E0F0] focus:outline-none focus:border-[#3F8CFF] hover:border-[#3F8CFF] ${inputClassName}`}
+                        className={`input rounded-[14px] pl-[18px] pr-0 py-[11px] border border-[#D8E0F0] focus:outline-none focus:border-[#3F8CFF] ${inputClassName}`}
                         {...props}
                     />
                     {eyeIcon && (
