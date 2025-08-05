@@ -43,7 +43,7 @@ const SignUpPage = () => {
                     </div>
                 </div>
                 <div className="w-[100%] max-w-[70%] rounded-[24px]  bg-white shadow-[0px_6px_rgba(196_203_214_0.5)]">
-                    <div className="flex flex-col max-w-[403px] mx-auto items-center pt-[115px]">
+                    <div className="flex flex-col max-w-[403px] mx-auto items-center gap-5 pt-[40px]">
                         <span className="text-[14px] text-[#3F8CFF] font-[700]">
                             STEP{" "}
                             {currentStep > progressData.length
@@ -66,23 +66,32 @@ const SignUpPage = () => {
                             label="Code from SMS"
                             placeholder=""
                         />
-                        <div>
+                        <span className="max-w-[70%]">
                             SMS was sent to your number +1 345 673-56-67 It will
                             be valid for 01:25
-                        </div>
+                        </span>
                         <Input
                             type="email"
                             label="Email Address"
                             placeholder="youremail@gmail.com"
                             inputClassName=""
                         />
+                        <Input
+                            type="password"
+                            label="Create Password"
+                            placeholder="********"
+                            inputClassName=""
+                        />
                     </div>
                     <hr className="my-[50px]" />
-                    <Button
-                        onClick={() => incrementCurrentStep()}
-                        variant="medium"
-                        children={`Next Step`}
-                    />
+                    <div className="flex p-2 justify-end items-end w-full">
+                        <Button
+                            className="h-fit"
+                            onClick={() => incrementCurrentStep()}
+                            variant="medium"
+                            children={`Next Step`}
+                        />
+                    </div>
                 </div>
             </div>
         </section>
